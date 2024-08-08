@@ -105,28 +105,28 @@ const init = async () => {
                 validator: AuthenticationsValidator,
             },
         },
-        {
-            plugin: collaborations,
-            options: {
-                collaborationsService,
-                notesService,
-                validator: CollaborationsValidator,
-            },
-        },
-        {
-            plugin: _exports,
-            options: {
-                service: ProducerService,
-                validator: ExportsValidator,
-            },
-        },
-        {
-            plugin: uploads,
-            options: {
-                service: storageService,
-                validator: UploadsValidator,
-            },
-        },
+        // {
+        //     plugin: collaborations,
+        //     options: {
+        //         collaborationsService,
+        //         notesService,
+        //         validator: CollaborationsValidator,
+        //     },
+        // },
+        // {
+        //     plugin: _exports,
+        //     options: {
+        //         service: ProducerService,
+        //         validator: ExportsValidator,
+        //     },
+        // },
+        // {
+        //     plugin: uploads,
+        //     options: {
+        //         service: storageService,
+        //         validator: UploadsValidator,
+        //     },
+        // },
     ]);
 
     server.ext('onPreResponse', (request, h) => {
