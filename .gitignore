@@ -1,5 +1,5 @@
 node_modules
 .env
 .prod.env
-notes-app-back-end-demo.pem
+notes.pem
 src/api/uploads/file
